@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
-import { format, parseISO, startOfMonth, endOfMonth } from 'date-fns'
-import { currentUser } from '@clerk/nextjs/server'
+import { format, parseISO } from 'date-fns'
 import { checkPermissions } from '@/lib/auth'
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
