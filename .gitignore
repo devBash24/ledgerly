@@ -52,5 +52,4 @@ yarn-error.log*
 **/public/worker-*.js.map
 
 # Prisma
-/prisma/migrations/
-prisma/schema.prisma
+/prisma/migrations
